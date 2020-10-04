@@ -9,8 +9,8 @@ let g:loaded_easyfunc_c = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
-pyfile <sfile>:h:h/src/easyfunc_c.py
-python import vim
+py3file <sfile>:h:h/src/easyfunc_c.py
+python3 import vim
 
 function! easyfunc_c#easyfunc_c()
     python easyfunc_c()

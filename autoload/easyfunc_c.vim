@@ -13,7 +13,7 @@ py3file <sfile>:h:h/src/easyfunc_c.py
 python3 import vim
 
 function! easyfunc_c#easyfunc_c()
-    python easyfunc_c()
+    python3 easyfunc_c()
 endfunction
 
 

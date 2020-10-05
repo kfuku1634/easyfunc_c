@@ -12,8 +12,8 @@ set cpo&vim
 py3file <sfile>:h:h/src/easyfunc_c.py
 python3 import vim
 
-function! easyfunc_c#easyfunc_c(selected_text)
-    python3 easyfunc_c(a:selected_text)
+function! easyfunc_c#easyfunc_c( selected_text ) 
+    python3 easyfunc_c( vim.eval('a:selected_text') )
 endfunction
 
 

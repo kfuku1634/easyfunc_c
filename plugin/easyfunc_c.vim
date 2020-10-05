@@ -11,9 +11,9 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 "選択範囲のテキスト取得
-let s:selected_text = @* 
-
-command! EasyFunc_C :call <C-u>easyfunc_c#easyfunc_c( s:selected_text )<CR>
+"let s:selected_text = @* 
+let g:selected_text = "aa"
+vnoremap f :call easyfunc_c#easyfunc_c( g:selected_text )<CR>
 
 let &cpo = s:save_cpo
 unlet s:save_cpo

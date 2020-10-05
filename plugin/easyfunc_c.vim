@@ -12,7 +12,7 @@ set cpo&vim
 
 "選択範囲のテキスト取得
 let s:selected_text = @* 
-command! -nargs=1 EasyFunc_C  :call <C-u>easyfunc_c#easyfunc_c(<f-args>)<CR>
+command! -nargs=1 EasyFunc_C  :call <C-u>easyfunc_c#easyfunc_c( s:selected_text )<CR>
 
 let &cpo = s:save_cpo
 unlet s:save_cpo

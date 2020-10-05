@@ -1,4 +1,4 @@
 
-def easyfunc_c():
-    print("hello world by python")
+def easyfunc_c( selected_text ):
+    print( selected_text )
 
